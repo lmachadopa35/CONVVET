@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Clínicas</title>
+<link rel="stylesheet" href="cadastros.css">
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js"></script>
+</head>
+<body>
+    <div class="foto">
+        <img src="convvet.png" alt="Descrição da Imagem">
+    </div>
+<div class="container">
+    <form id="clinicForm" action="clinicas_cadastro.php" method="post">
+        <input type="text" name="user" id="user" placeholder="Nome de usuário" required>
+        <input type="text" name="clinicName" id="clinicName" placeholder="Nome da Clínica" required>
+        <input type="text" name="endereco" id="endereco" placeholder="Endereço completo" required>
+        <input type="tel" name="phone" id="phone" placeholder="Telefone de contato" required>
+        <input type="email" name="commercialEmail" id="commercialEmail" placeholder="Email comercial" required>
+        <input type="text" name="cnpj" id="cnpj" placeholder="CNPJ" required>
+        <button type="submit">Cadastrar Clínica</button>
+    </form>
+</div>
+<script src="clinicApp.js"></script>
+</body>
+</html>

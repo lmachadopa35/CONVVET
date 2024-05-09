@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js"></script>
+</head>
+<body>
+    <div class="foto">
+        <img src="convvet.png" alt="Descrição da Imagem">
+    </div>  
+<div class="container">
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Nome de usuário" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+        <button type="button" onclick="window.location='clientes.html';">Cadastro de clientes</button>
+        <button type="button" onclick="window.location='clinicas.html';">Cadastro de clínicas</button>
+    </form>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
+
