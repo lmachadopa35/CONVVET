@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Emergência</title>
+<link rel="stylesheet" href="agendamento.css">
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js"></script>
+</head>
+<body>
+    <div class="foto">
+        <img src="convvet.png" alt="Descrição da Imagem">
+    </div>
+<div class="container">
+    <form id="signupForm" action="clientes_cadastro.php" method="post">
+        <input type="text" id="local" name="local" placeholder="Informe a localização" required>
+        <input type="text" id="hora" name="hora" placeholder="Selecionar clinica" required>
+        <button type="submit">Acionar</button>
+    </form>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
