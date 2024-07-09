@@ -1,3 +1,52 @@
+/* HOME */
+
+body {
+    margin: 0;
+    background-color: #DCA1FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 15%; /* Espaço entre a logo e os botões */
+}
+#logo {
+    width: 150px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 20px;
+}
+.grid-item {
+    background-color: #B380D4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.grid-item:hover {
+    background-color: #a070c2; /* Tom mais escuro da cor #B380D4 */
+}
+a{
+    text-decoration: none; color:white
+}
+
+/* MAPA */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -9,7 +58,6 @@ body {
     justify-content: center;
     position: relative;
 }
-
 .back-button {
     position: absolute;
     top: 20px;
@@ -21,21 +69,69 @@ body {
     border-radius: 5px;
     font-weight: bold;
 }
-
 h1 {
     color: white;
     margin: 20px 0;
 }
-
 #map-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-
 iframe {
     width: 80vw;
     height: 80vh;
     border: 0;
+}
+
+/* AGENDAMENTO / EMERGENCIA */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #dca1ff; /* Cor de fundo como na imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    align-items: center;
+    background: #be73f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+}
+.foto img {
+    width: 200px;
+    margin-right: 20px;
+}
+form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    background: #ffffff;
+}
+button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: white;
+    background-color: #9e55fd;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background-color: #8e3cfa;
 }
