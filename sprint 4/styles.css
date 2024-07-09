@@ -1,63 +1,5 @@
-/* HOME */
+/* ALL */
 
-body {
-    margin: 0;
-    background-color: #DCA1FF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.menu {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 15%; /* Espaço entre a logo e os botões */
-}
-#logo {
-    width: 150px;
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-gap: 20px;
-}
-.grid-item {
-    background-color: #B380D4;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    height: 100px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.grid-item:hover {
-    background-color: #a070c2; /* Tom mais escuro da cor #B380D4 */
-}
-a{
-    text-decoration: none; color:white
-}
-
-/* MAPA */
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    background-color: #DCA1FF;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
 .back-button {
     position: absolute;
     top: 20px;
@@ -69,17 +11,127 @@ body {
     border-radius: 5px;
     font-weight: bold;
 }
-h1 {
+
+
+/* HOME */
+
+.home {
+    margin: 0;
+    background-color: #DCA1FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home .menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+.home #logo {
+    width: 150px;
+}
+.home .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 20px;
+}
+.home .grid-container2 {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 20px;
+}
+.home .grid-item {
+    background-color: #B380D4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.home .grid-item:hover {
+    background-color: #a070c2; /* Tom mais escuro da cor #B380D4 */
+}
+.home a{
+    text-decoration: none; color:white
+}
+.home  form {
+    background: #be73f0;
+    padding: 40px;
+    border-radius: 8px;
+    border: solid 1px black;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Largura fixa para garantir a consistência */
+}
+.home  input[type="text"], .home  input[type="password"], .home  input[type="email"], .home  input[type="tel"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.home  button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: solid 1px black;
+    color: white;
+    background-color: #9e55fd;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.home  button:hover {
+    background-color: #8e3cfa;
+}
+.home  button[type="button"] {
+    background-color: #8046cc;
+}
+.home  button[type="button"]:hover {
+    background-color: #562696;
+}
+.home  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* MAPA */
+
+.mapa {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #DCA1FF;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.mapa h1 {
     color: white;
     margin: 20px 0;
 }
-#map-container {
+.mapa #map-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-iframe {
+.mapa iframe {
     width: 80vw;
     height: 80vh;
     border: 0;
@@ -87,7 +139,7 @@ iframe {
 
 /* AGENDAMENTO / EMERGENCIA */
 
-body, html {
+.ae{
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
@@ -97,7 +149,7 @@ body, html {
     align-items: center;
     height: 100vh;
 }
-.container {
+.ae .container {
     display: flex;
     align-items: center;
     background: #be73f0;
@@ -105,17 +157,17 @@ body, html {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.6);
 }
-.foto img {
+.ae .foto img {
     width: 200px;
     margin-right: 20px;
 }
-form {
+.ae form {
     width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+.ae input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
     padding: 10px;
     margin-bottom: 10px;
     border: 2px solid #ccc;
@@ -123,7 +175,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
     font-size: 15px;
     background: #ffffff;
 }
-button {
+.ae button {
     padding: 10px;
     font-size: 16px;
     border-radius: 4px;
@@ -132,6 +184,6 @@ button {
     cursor: pointer;
     border: none;
 }
-button:hover {
+.ae button:hover {
     background-color: #8e3cfa;
 }
