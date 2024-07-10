@@ -12,10 +12,10 @@
         <img src="convvet.png" alt="Descrição da Imagem">
     </div>
 <div class="container">
-    <form id="signupForm" action="clientes_cadastro.php" method="post">
+    <form id="signupForm" action="agendamento.php" method="post">
         <input type="text" id="motivo" name="motivo" placeholder="Motivo da Consulta" required>
-        <input type="text" id="hora" name="hora" placeholder="Horário da Consulta" required>
-        <input type="text" id="data" name="data" placeholder="Data da Consulta" required>
+        <input type="text" onkeyup="handleHour(event)" maxlength="5" id="hora" name="hora" placeholder="Horário da Consulta" required>
+        <input type="text" onkeyup="handleDay(event)" maxlength="10"  id="adata" name="adata" placeholder="Data da Consulta" required>
         <input type="text" id="clinica" name="clinica" placeholder="Selecionar clínica" required>
         <button type="submit">Agendar</button>
     </form>
