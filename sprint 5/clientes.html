@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Cadastro</title>
+<link rel="stylesheet" href="cadastros.css">
+<link rel="stylesheet" href="navbar.css">
+
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js"></script>
+</head>
+<body>
+    <div class="foto">
+        <img src="convvet.png" alt="Descrição da Imagem">
+    </div>
+<div class="container">
+    <form id="signupForm" action="clientes_cadastro.php" method="post">
+        <input type="text" id="fullName" name="fullName" placeholder="Nome Completo" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="password" name="senha" id="password" placeholder="Senha" required>
+        <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
+        <input type="text" id="address" name="endereco" placeholder="Endereço" required>
+        <input type="tel" id="phone" name="phone" placeholder="Telefone" required>
+        <input type="text" id="animal" name="animal" placeholder="Animal" required>
+        <input type="text" id="race" name="race" placeholder="Raça" required>
+        <input type="text" id="animalName" name="animalName" placeholder="Nome do Animal" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+</div>
+<div id="nav-bar">
+    <input id="nav-toggle" type="checkbox"/>
+    <div id="nav-header"><a id="nav-title" href="index.html">Convvet</a>
+      <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+      <hr/>
+    </div>
+    <div id="nav-content">
+      
+      <a href="index.html"><div class="nav-button"><i class="fas fa-palette"></i><span>Voltar</span></div></a>
+
+      <div id="nav-content-highlight"></div>
+    </div>
+    <input id="nav-footer-toggle" type="checkbox"/>
+    
+  </div>
+<script src="app.js"></script>
+</body>
+</html>
