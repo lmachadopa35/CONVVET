@@ -1,0 +1,67 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #DCA1FF;
+    /* Cor de fundo como na imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container para a imagem e formulário */
+.container {
+    display: flex;
+    align-items: center;
+    background: #be73f0;
+    /* Cor de fundo do formulário */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilização da imagem */
+.foto img {
+    width: 200px;
+    /* Tamanho fixo para manter consistência */
+    margin-right: 20px;
+    /* Espaçamento entre a imagem e o formulário */
+}
+
+/* Estilização do formulário */
+form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilização dos inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    background: #ffffff;
+}
+
+/* Botão de ação */
+button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: white;
+    background-color: #9e55fd;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #8e3cfa;
+}
