@@ -1,3 +1,53 @@
+<?php
+require ('connection.php');
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+
+  $fullName = $_POST["fullName"];
+  $email = $_POST["email"];
+    $senha = $_POST["senha"];
+    $cpf = $_POST["cpf"];
+    $endereco = $_POST["endereco"];
+    $phone = $_POST["phone"];
+    $animal = $_POST["animal"];
+    $race = $_POST["race"];
+    $animalName = $_POST["animalName"];
+
+    function inserirRegistro($pdo, $fullName, $email, $senha, $cpf, $endereco, $phone, $animal, $race, $animalName) {
+        $sql = "INSERT INTO clientes (fullName, email, senha, cpf, endereco, phone, animal, race, animalName) 
+        VALUES (:fullName, :email, :senha, :cpf, :endereco, :phone, :animal, :race, :animalName)";
+        $stmt = $pdo->prepare($sql);
+        $stmt->bindParam(':fullName', $fullName, PDO::PARAM_STR);
+        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+        $stmt->bindParam(':senha', $senha, PDO::PARAM_STR);
+        $stmt->bindParam(':cpf', $cpf, PDO::PARAM_STR);
+        $stmt->bindParam(':endereco', $endereco, PDO::PARAM_STR);
+        $stmt->bindParam(':phone', $phone, PDO::PARAM_STR);
+        $stmt->bindParam(':animal', $animal, PDO::PARAM_STR);
+        $stmt->bindParam(':race', $race, PDO::PARAM_STR);
+        $stmt->bindParam(':animalName', $animalName, PDO::PARAM_STR);
+        return $stmt->execute();
+    }
+}
+
+
+  if (inserirRegistro($pdo, $fullName, $email, $senha, $cpf, $endereco, $phone, $animal, $race, $animalName)) {
+    header("Location: index.html");
+    exit;
+      echo "Registro inserido com sucesso!<br>" . "<a href='index.php'>HOME</a>";
+  } else {
+      echo 'Erro ao inserir o registro.';
+     
+ }
+
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +64,7 @@
         <img src="assets/convvet.png" alt="Descrição da Imagem">
     </div>
 <div class="container">
-    <form id="clinicForm" action="clinicas_cadastro.php" method="post">
+    <form id="clinicForm" method="post">
         <input type="text" name="user" id="user" placeholder="Nome de usuário" required>
         <input type="text" name="clinicName" id="clinicName" placeholder="Nome da Clínica" required>
         <input type="text" name="endereco" id="endereco" placeholder="Endereço completo" required>
