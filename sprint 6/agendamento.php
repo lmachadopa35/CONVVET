@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <img src="assets/convvet.png" alt="Descrição da Imagem">
     </div>
 <div class="container">
-    <form id="signupForm" action="agendamento.php" method="post">
+    <form id="signupForm" method="post">
         <input type="text" id="motivo" name="motivo" placeholder="Motivo da Consulta" required>
         <input type="text" onkeyup="handleHour(event)" maxlength="5" id="hora" name="hora" placeholder="Horário da Consulta" required>
         <input type="text" onkeyup="handleDay(event)" maxlength="10"  id="adata" name="adata" placeholder="Data da Consulta" required>
