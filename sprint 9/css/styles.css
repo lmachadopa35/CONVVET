@@ -47,6 +47,7 @@
     grid-gap: 20px;
 }
 .home .grid-item {
+    text-align: center;
     background-color: #B380D4;
     color: white;
     display: flex;
