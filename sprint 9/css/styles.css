@@ -37,13 +37,13 @@
 }
 .home .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(2, 200px);
     grid-gap: 20px;
 }
 .home .grid-container2 {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(2, 200px);
     grid-gap: 20px;
 }
 .home .grid-item {
