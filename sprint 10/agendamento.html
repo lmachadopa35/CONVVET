@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Agendamento</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="ae">
+    <a href="index.html" class="back-button">Voltar</a>
+    <div class="foto">
+        <img src="assets/convvet.png" alt="Descrição da Imagem">
+    </div>
+<div class="container">
+    <form id="signupForm" action="agendamento.php" method="post">
+        <input type="text" id="motivo" name="motivo" placeholder="Motivo da Consulta" required>
+        <input type="text" onkeyup="handleHour(event)" maxlength="5" id="hora" name="hora" placeholder="Horário da Consulta" required>
+        <input type="text" onkeyup="handleDay(event)" maxlength="10"  id="adata" name="adata" placeholder="Data da Consulta" required>
+        <div class="select-wrapper">
+        <select id="clinica" name="clinica" required>
+            <option value="" disabled selected>Selecionar clínica</option>
+            <option value="Cantinho do Animal">Cantinho do Animal</option>
+            <option value="Imagine Serviços Veterinários">Imagine Serviços Veterinários</option>
+            <option value="Telecão">Telecão</option>
+            <option value="A ARCA DOS BICHOS VETERINÁRIA 24 HORAS">A ARCA DOS BICHOS VETERINÁRIA 24 HORAS</option>
+            <option value="PET MANIA">PET MANIA</option>
+            <option value="PET CENTER VETERINARIA">PET CENTER VETERINARIA</option>
+            <option value="Hospital Veterinário São Francisco de Assis">Hospital Veterinário São Francisco de Assis</option>
+            <option value="Território dos Bichos">Território dos Bichos</option>
+            <option value="Life Hospital e Clínica Veterinária">Life Hospital e Clínica Veterinária</option>
+            <option value="Peticho Farmácia e Clínica Veterinária">Peticho Farmácia e Clínica Veterinária</option>
+        </select>
+        </div>
+        <button type="submit">Agendar</button>
+    </form>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
