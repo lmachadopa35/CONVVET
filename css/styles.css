@@ -48,7 +48,7 @@
 }
 .home .grid-item {
     text-align: center;
-    background-color: #B380D4;
+    background-color: #9e55fd;
     color: white;
     display: flex;
     justify-content: center;
@@ -60,7 +60,7 @@
     transition: background-color 0.3s ease;
 }
 .home .grid-item:hover {
-    background-color: #a070c2; /* Tom mais escuro da cor #B380D4 */
+    background-color: #8e3cfa; /* Tom mais escuro da cor #B380D4 */
 }
 .home a{
     text-decoration: none; color:white
@@ -157,6 +157,7 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    
 }
 .ae .foto img {
     width: 200px;
@@ -176,7 +177,7 @@
     font-size: 15px;
     background: #ffffff;
 }
-.ae button {
+.ae button  {
     padding: 10px;
     font-size: 16px;
     border-radius: 4px;
@@ -189,24 +190,52 @@
     background-color: #8e3cfa;
 }
 
-.container textarea {
-    width: 100%;
+
+
+
+#clinica{
+    border: #ccc;
     padding: 10px;
-    margin: 10px 0;
-    border: none;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
     border-radius: 5px;
+    font-size: 15px;
+    width: 100%;
 }
 
 
-.cadcli{
+.container textarea {
+    resize: none; /* Desabilita a capacidade de redimensionar a textarea */
+    width: 92%; /* Garante que a textarea ocupe todo o espaço disponível */
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    background: #ffffff;
+}
+
+
+.cadcli {
     padding: 10px;
     font-size: 16px;
+    border: solid black 1px;
     border-radius: 4px;
     color: white;
     background-color: #9e55fd;
     cursor: pointer;
-    border: none;
+    text-align: center;
+    margin-bottom: 5px; /* Adiciona um espaçamento de 5px abaixo de cada botão */
+
+
 }
-.cadcli :hover {
+
+.cadcli:hover {
     background-color: #8e3cfa;
+}
+
+.container button{
+    margin-bottom: 5px; /* Adiciona um espaçamento de 5px abaixo de cada botão */
+
+
 }
