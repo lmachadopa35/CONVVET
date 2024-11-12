@@ -1,9 +1,10 @@
-/* Estilos básicos */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background: #DCA1FF; /* Cor de fundo como na imagem */
+    background: #DCA1FF;
+    /* Cor de fundo como na imagem */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,16 +15,19 @@ body, html {
 .container {
     display: flex;
     align-items: center;
-    background: #be73f0; /* Cor de fundo do formulário */
+    background: #be73f0;
+    /* Cor de fundo do formulário */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 /* Estilização da imagem */
 .foto img {
-    width: 200px; /* Tamanho fixo para manter consistência */
-    margin-right: 20px; /* Espaçamento entre a imagem e o formulário */
+    width: 200px;
+    /* Tamanho fixo para manter consistência */
+    margin-right: 20px;
+    /* Espaçamento entre a imagem e o formulário */
 }
 
 /* Estilização do formulário */
@@ -35,7 +39,10 @@ form {
 }
 
 /* Estilização dos inputs */
-input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
     padding: 10px;
     margin-bottom: 10px;
     border: 2px solid #ccc;
