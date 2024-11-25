@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DCA1FF;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.voltar {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Usa absolute para não afetar o layout de .nav-bar */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste fino para centralização exata */
+    width: 90%; /* Ajuste conforme necessário */
+    max-width: 1200px; /* Mantém os cartões dentro de uma largura máxima */
+}
+
+.card {
+    background-color: #be73f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Ajuste a largura dos cartões conforme necessário */
+    margin: 10px;
+}
+
+.card h2 {
+    color: white;
+}
+
+.card p {
+    color: white;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #9e55fd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #8e3cfa;
+}
+
+.conf-cob{
+    background-color: #9e55fd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.conf-cob:hover {
+    background-color: #8e3cfa;
+}
+
+a{
+    text-decoration: none;
+}
