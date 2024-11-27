@@ -1,0 +1,61 @@
+.emergencies-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.emergencies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.emergency-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.emergency-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.emergency-card p {
+    margin: 5px 0;
+}
+
+.action-buttons {
+    margin-top: 10px;
+}
+
+.status-dropdown {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-update {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-update:hover {
+    background-color: #0056b3;
+}
+
+.no-emergencies {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+}

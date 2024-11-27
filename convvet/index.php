@@ -313,3 +313,5 @@ switch (ENVIRONMENT)
  * And away we go...
  */
 require_once BASEPATH.'core/CodeIgniter.php';
+$system_path = 'system';
+$application_folder = 'application';

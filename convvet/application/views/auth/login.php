@@ -20,47 +20,46 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/navbar.css">
 
+    <style>
+    select {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 15px;
+        background: #ffffff;
+    }
+    </style>
 
 </head>
 
 <body class="home">
 
+    <button class="open-btn" id="open-btn">&#9776;</button>
+    <div id="navbar-container"></div>
+    <script src="../js/navbar.js"></script>
+
     <div class="menu">
         <img id="logo" class="logo-image" src="../assets/convvet.png" alt="Logo">
     </div>
     <div class="container">
-    <form action="<?= site_url('auth/do_login'); ?>" method="POST">
+        <form action="<?= site_url('auth/do_login'); ?>" method="POST">
             <input name="email" type="email" id="username" placeholder="E-mail" required>
             <input name="password" type="password" id="password" placeholder="Senha" required>
-
+            <select name="role" required>
+                <option value="client">Cliente</option>
+                <option value="clinic">Clínica</option>
+                <option value="admin">Administrador</option>
+            </select>
             <button type="submit">Entrar</button>
-            <a href="clientes.html" class="cadcli">Cadastro de clientes</a>
-            <a href="clinicas.html" class="cadcli">Cadastro de clinicas</a>
+            <a href="../auth/register_client" class="cadcli">Cadastro de clientes</a>
+            <a href="../auth/register_clinic" class="cadcli">Cadastro de clinicas</a>
 
 
     </div>
 
-    <div class="container">
 
-        <div id="nav-bar">
-            <input id="nav-toggle" type="checkbox" />
-            <div id="nav-header"><a id="nav-title" href="index.html">Convvet</a>
-                <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
-                <hr />
-            </div>
-            <div id="nav-content">
 
-                <a href="index.html">
-                    <div class="nav-button"><i class="fas fa-palette"></i><span>Voltar</span></div>
-                </a>
-
-                <div id="nav-content-highlight"></div>
-            </div>
-            <input id="nav-footer-toggle" type="checkbox" />
-
-        </div>
-
-    </div>
     <script src="../js/app.js"></script>
 </body>
 

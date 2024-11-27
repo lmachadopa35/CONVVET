@@ -77,11 +77,11 @@ $query_builder = TRUE;
 // application/config/database.php
 $db['default'] = array(
     'dsn'   => '',
-    'hostname' => '',  // Não precisa de hostname para SQLite
+    'hostname' => '',
     'username' => '',
     'password' => '',
-    'database' => '/Users/larger/Desktop/github/CONVVET-1/convvet/application/config/database.sqlite3',  // Caminho do arquivo SQLite
-    'dbdriver' => 'sqlite3',  // O driver correto para SQLite
+    'database' => '/Users/larger/Desktop/github/malado/convvet/convvet/application/config/database.sqlite3', // Atualize para o caminho correto
+    'dbdriver' => 'sqlite3',
     'dbprefix' => '',
     'pconnect' => FALSE,
     'db_debug' => (ENVIRONMENT !== 'production'),

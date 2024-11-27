@@ -534,6 +534,7 @@ $config['proxy_ips'] = '';
 // application/config/config.php
 $config['index_page'] = '';  // Deixe vazio para remover o index.php
 
-$config['base_url'] = 'http://localhost:8000';
+$config['base_url'] = 'http://localhost:8000/';
 $config['sess_save_path'] = APPPATH . 'sessions';
 $config['sess_save_path'] = FCPATH . 'application/sessions';  // Ou qualquer outro diretório que tenha permissão de escrita
+$config['log_threshold'] = 4; // Ativar todos os níveis de log

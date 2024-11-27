@@ -40,6 +40,7 @@
                 <label for="address">Endereço:</label>
                 <input type="text" id="address" name="address" required>
             </div>
+            
             <button type="submit">Cadastrar</button>
         </form>
         <p>Já tem uma conta? <a href="<?= site_url('auth/login'); ?>">Faça login</a></p>

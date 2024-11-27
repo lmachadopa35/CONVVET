@@ -10,6 +10,8 @@ class Pet_model extends CI_Model {
         return $this->db->insert('pets', $data); // Insere os dados na tabela 'pets'
     }
 
+    
+
     // Método para obter todos os pets de um usuário
     public function get_pets_by_user($user_id) {
         $this->db->select('*');
@@ -34,6 +36,13 @@ class Pet_model extends CI_Model {
     public function delete_pet($pet_id) {
         $this->db->where('id', $pet_id);
         $this->db->delete('pets');
+    }
+    public function get_all_pets() {
+        $this->db->select('pets.id, pets.type, pets.name AS pet_name, pets.breed, pets.age, users.name AS user_name');
+        $this->db->from('pets');
+        $this->db->join('users', 'pets.user_id = users.id', 'left');  // LEFT JOIN para incluir pets sem usuário
+        $query = $this->db->get();
+        return $query->result();
     }
 }
 ?>

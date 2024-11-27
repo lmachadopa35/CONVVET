@@ -1,22 +1,43 @@
-<!-- application/views/clinic/dashboard.php -->
-<!DOCTYPE html>
-<html lang="pt-br">
+<!-- Listagem de Pets -->
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard da Clínica</title>
-    <link rel="stylesheet" href="<?= base_url('assets/css/dashboard.css'); ?>">
-</head>
-<body>
-    <div class="dashboard-container">
-        <h2>Bem-vindo ao seu Dashboard, <?= $this->session->userdata('name'); ?>!</h2>
-        <p>Aqui você pode gerenciar consultas e agendamentos.</p>
+    <title>Dashboard Client - CONVVET</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/navbar.css">
 
-        <div class="menu-options">
-            <a href="<?= site_url('clinic/profile'); ?>">Ver Perfil</a>
-            <a href="<?= site_url('clinic/appointments'); ?>">Gerenciar Consultas</a>
-            <a href="<?= site_url('auth/logout'); ?>">Sair</a>
-        </div>
+
+</head>
+
+<body class="home">
+
+<div class="menu">
+      <img id="logo" class="logo-image" src="assets/convvet.png" alt="Logo">
+  </div>
+    <button class="open-btn" id="open-btn">&#9776;</button>
+    <div id="navbar-container"></div>
+    <script src="../js/navbar.js"></script>
+
+    <div class="container">
+    <div class="container-all">
+    <div class="grid-container">
+        <a href="/clinic_dashboard/pending_appointments">
+                <div class="grid-item">AGENDAMENTOS</div>
+        </a>
+            <a href="/clinic_dashboard/view_pets">
+                <div class="grid-item">Ver Pets</div>
+            </a>
     </div>
+    <a href="/client_dashboard/create_emergency">
+                <div  style="width: 420px; margin-top: 20px" class="grid-item">EMERGÊNCIA</div>
+            </a>
+
+            </div>
+    </div> 
+</div>
+<script src="../js/navbar.js"></script>
 </body>
+
 </html>
